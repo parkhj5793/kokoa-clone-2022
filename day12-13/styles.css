@@ -1,0 +1,230 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700;800;900&display=swap');
+
+/*reset, variables*/
+@import "reset.css";
+
+/*components*/
+
+/*screens*/
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.playlist {
+    width: 280px;
+    height: 600px;
+    background-color:#FFFFFF;
+    border-radius: 30px;
+    margin-right: 50px;
+    box-shadow:0 10px 50px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin:35px 20px 15px;
+}
+
+.header>i{
+    opacity: 0.8;
+}
+
+.Profile__img {
+    text-align: center;
+}
+
+.Profile__img img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow:0 10px 10px rgba(17, 17, 60, 0.3);
+}
+
+.Profile__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Profile__data__name {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    opacity: 0.8;
+}
+
+.Profile__data__caterory {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 800;
+    opacity: 0.4;
+}
+
+.bnts {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bnts__shuffle {
+    background-color: black;
+    padding: 12px 28px;
+    border-radius: 24px;
+    box-shadow:0 1px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.bnts__like {
+    display: flex;
+    background-color: white;
+    padding: 12px 16px;
+    border-radius: 24px;
+    box-shadow:0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fas.fa-heart.fa-xs {
+    margin-right: 5px;
+}
+
+.bnts__like__no {
+    font-size: 12px;
+    opacity: 0.4;
+    font-weight: 800;
+}
+
+.songlists__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 35px 13px 33px;
+}
+
+.songlists__list--select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 23px 15px 20px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 14px;
+    box-shadow:0 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+.songlists__list--select__playbars {
+    display: flex;
+    position: absolute;
+    top: 13px; left:7px;
+}
+
+.playbar {
+    width: 5px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: black;
+    opacity: 0.7;
+    margin-right: 3px;
+}
+
+.playbar:nth-child(1) {
+    animation: songplay 1.5s infinite;
+    animation-delay: 0.5s;
+}
+
+.playbar:nth-child(2) {
+    animation: songplay 1.5s infinite;
+    animation-delay: 1s;
+}
+
+.playbar:nth-child(3) {
+    animation: songplay 1.5s infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes songplay {
+    0% {transform: scaleY(1);}
+    50% {transform: scaleY(2)}
+    100% {transform: scaleY(1)}
+}
+
+.songlists__list__info {
+    display: flex; 
+    position: relative;       
+}
+
+.songlists__list__info img {
+    width: 35px;       
+    height: 35px;
+    border-radius: 5px;        
+    margin-right: 15px;
+}
+
+.songlists__list__text__name {
+    font-size: 12px;
+    font-weight: 800;
+    opacity: 0.4;
+    margin-bottom: 3px;
+}
+
+.songlists__list__text__title {
+    font-size: 16px;
+    font-weight: 800;
+    opacity: 0.8;
+}
+
+.fas.fa-ellipsis-v.fa-sm {
+    opacity: 0.3;
+}
+
+.playlist__player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    margin: 0 14px;
+    background-color: black;
+    border-radius: 25px;
+    position:absolute;
+    bottom: 20px;
+    width: 90%;
+    box-sizing: border-box;
+    box-shadow:0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.playlist__player__info__name {
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    opacity: 0.4;
+    margin-bottom: 3px;
+}
+
+.playlist__player__info__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    opacity: 0.8;
+}
+
+.playlist__player__bnts i {
+    color: white;
+    margin-left: 10px;
+}
+.player {
+    width: 280px;
+    height: 600px;
+    background-color:#FFFFFF;
+    border-radius: 30px;
+    box-shadow:0 10px 50px rgba(0, 0, 0, 0.1);
+}
