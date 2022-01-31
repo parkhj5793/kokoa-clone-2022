@@ -1,0 +1,29 @@
+body {
+    background-image: url("../images/chatlist_background.png");
+    background-size: 400px auto;
+    background-repeat: no-repeat;
+    background-position: top 400px left 100px;
+}
+
+.chatlists {
+    margin-top: 90px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.8);
+        opacity: 0.7;	
+	}
+	50% {
+        transform: scale(1);
+        opacity: 1;
+	}	
+	100% {
+        transform: scale(0.8);
+        opacity: 0.7;	
+	}			
+}
+
+.nav_default__chattinglist {
+    animation: pulse 1.5s infinite
+}

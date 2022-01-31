@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/screens/chatlist.css">
+    <title>Chats - KokoaTalk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <span class="status-bar_Agency">LG U+</span>
+        <span class="status-bar_time">12:33</span>
+        <div class="status-bar_info">
+            <i class="fas fa-clock fa-xs"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-signal fa-xs"></i>
+            <span class="status-bar_battery">77%</span>
+            <i class="fas fa-battery-three-quarters"></i>
+        </div>
+    </div>
+    <header class="chats_header">
+        <span class="header_title">Chats</span>
+        <div class="header_control">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-comment-medical"></i>
+            <i class="fas fa-music"></i>
+            <a href="setting.html">
+                <img src="CSS/images/mark.png">
+                <i class="fas fa-cog"></i>
+            </a>
+        </div>
+    </header>
+    <ul class="chatlists">
+        <li class="chatlists_list">
+            <a href="chat.html">
+                <div class="usertype_small">
+                    <div class="usertype_mid_profile">
+                        <img src="CSS/images/user_2.png">
+                        <div class="usertype_small_profile_info">
+                            <span class="usertype_small_profile_info_name">Rachel</span>
+                            <span class="usertype_small_profile_info_descrip">I arrived.</span>
+                        </div>
+                    </div> 
+                    <div class="usertype_small_etc_chats">
+                        <span class="usertype_small_etc_date">13:07</span>
+                        <div class="usertype_small_etc_alarm">3</div>
+                    </div>    
+                </div>        
+            </a>
+        </li>
+        <li class="chatlists_list">
+            <div class="usertype_small">
+                <div class="usertype_mid_profile">
+                    <img src="CSS/images/user_3.png">
+                    <div class="usertype_small_profile_info">
+                        <span class="usertype_small_profile_info_name">Michle</span>
+                        <span class="usertype_small_profile_info_descrip">Take care and see you next time.</span>
+                    </div>
+                </div> 
+                <div class="usertype_small_etc_chats">
+                    <span class="usertype_small_etc_date">Jan 13</span>
+                </div>
+            </div>        
+        </li>
+    </ul>
+    <nav class="nav_default">
+        <div class="nav_default__friendslist">
+            <a href="friends.html"><img src="CSS/images/nav_1.png" art="friendslist"></a>
+        </div>
+        <div class="nav_default__chattinglist">
+            <a href="chatlist.html"><img src="CSS/images/nav_2.png" art="chattinglist"></a>
+            <div class="nav_default__chattinglist_alarm">
+                <div>3</div>
+            </div>       
+        </div>
+        <div class="nav_default__search">
+            <a href="search.html"><img src="CSS/images/nav_3.png" art="search"></a>
+        </div>
+        <div class="nav_default__more">
+            <a href="more.html">
+                <img class="nav_mark" src="CSS/images/mark.png">
+                <img  class="nav_goast" src="CSS/images/nav_4.png" art="more">
+            </a>
+        </div>
+    </nav>
+    <div class="no-mobile">
+        <img class="no-mobile_img" src="CSS/images/no_mobile.png">
+        <span class="no-mobile_text">
+            You're Screen is TOO BIG... :(
+        </span>
+    </div>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous" ></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 43.6px 22px 20px 22px;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: white;
+    position: fixed;
+    top:0px;
+}
+
+.header_title {
+    font-size: 21px;
+    font-weight: 900;
+    opacity: 0.8;
+}
+
+.header_control i {
+    margin-left: 24px;
+    opacity: 0.8;
+}
+
+.header_others {
+    display: flex;
+    align-items: center;
+    padding: 43.6px 22px 20px 22px;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color:#F7F7F7;
+    position: fixed;
+    top:0px;
+}
+
+.header_others_settings {
+    display: flex;
+    align-items: center;
+    padding: 20px 22px;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: white;
+    position: fixed;
+    top:23.6px;
+}
+
+.header_others_back, .header_others_title, .header_others_control {
+    width: 33%;
+    opacity: 0.8;
+}
+
+.header_others_title {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+.header_others_control {
+    text-align: end;
+}
+
+.header_others_control i{
+    margin-left: 24px;
+}
+
+.fas.fa-cog {
+   position: relative;
+}
+
+.header_control img{
+    width: 10px;
+    position: absolute;
+    right: 18px;
+    top:35px;
+}
+

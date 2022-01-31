@@ -1,0 +1,214 @@
+body {
+    background-image: url("../images/chat_background.png");
+    background-color: #F7F7F7;
+    background-size: 200px auto;
+    background-repeat: no-repeat;
+    background-position: top 300px left 100px;
+    height: 100vh;
+}
+
+.chat_main {
+    margin-top: 90px;
+}
+
+.chat_date {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.chat_date span {
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: rgba(0,0,0,0.5);
+    padding: 9px 12px;
+    border-radius: 20px;
+}
+.chat_friend {
+    margin: 0 22px;
+}
+
+.chat_friend_msg {
+    display: flex;
+    padding: 10px 0;
+}
+
+.chat_friend_img img {
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.chat_friend_info {
+    margin-left: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat_friend_name {
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.5;
+    margin-bottom: 7px;
+}
+
+.chat_friend_talk {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chat_friend_talk_msg {
+    background-color:#AE7486;
+    color:white;
+    padding: 12px 10px;
+    border-radius: 0 10px 10px 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.chat_friend_talk_time, .chat_my_talk_time {
+    font-size: 10px;
+    font-weight: 700;
+    opacity: 0.5;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.chat_my_msg {
+    display: flex;
+    align-items:flex-end;
+    flex-direction: row-reverse;
+    padding: 10px 0;
+}
+
+.chat_my_talk_msg {
+    background-color: #5D7068;
+    color:white;
+    padding: 12px 10px;
+    border-radius: 10px 0 10px 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.reply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding: 5px 22px;
+    width: 100vw;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.reply_bnt{
+    width: 10%;
+    opacity: 0.5;
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reply_mgs {
+    height: 38px;
+    width: 90%;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 10px;
+}
+
+.reply_msginput {
+    width: 90%;
+    margin-left: 10px;
+    border: none;
+}
+
+input::placeholder {
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.far.fa-smile-wink {
+    font-size: 24px;
+    opacity: 0.5;
+    position: absolute;
+    right: 50px
+}
+
+.reply_mgs_send {
+    width: 30px;
+    height: 30px;
+    background-color:rgba(0, 0, 0, 0.8);
+    border:none;
+    border-radius: 15px;
+    position: absolute;
+    right: 12px
+}
+
+.fas.fa-arrow-up {
+    color: white;
+}
+
+@keyframes chat_move {
+    0% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+
+    75% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.chat_main {
+    animation: chat_move 1s linear forwards;
+}
+
+.chat_friend li:nth-child(4) {
+    transform: scale(0) 1.5s;
+    animation: chat_msg 1s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 1.5s;
+}
+
+.chat_friend li:nth-child(5) {
+    transform: scale(0) 2.5s;
+    animation: chat_msg 1s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 2.5s;
+}
+
+.chat_friend li:nth-child(6) {
+    transform: scale(0) 4.5s;
+    animation: chat_msg 1s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 4.5s;
+}
+
+.chat_friend li:nth-child(7) {
+    transform: scale(0) 5.5s;
+    animation: chat_msg 1s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 5.5s;
+}
+
+@keyframes chat_msg {
+    0%{transform:scaleY(0)}
+    50%{transform:scaleY(.5) scaleX(.9)}
+    100%{transform:scaleY(1) scaleX(1)}
+}

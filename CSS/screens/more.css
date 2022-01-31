@@ -1,0 +1,116 @@
+body {
+    background-image: url("../images/more_background.png");
+    background-size: 150px auto;
+    background-repeat: no-repeat;
+    background-position: top 250px left 250px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.8);
+        opacity: 0.7;	
+	}
+	50% {
+        transform: scale(1);
+        opacity: 1;
+	}	
+	100% {
+        transform: scale(0.8);
+        opacity: 0.7;	
+	}			
+}
+
+.nav_default__more {
+    animation: pulse 1.5s infinite
+}
+
+.more_main {
+    padding-top: 90px;
+}
+
+.fas.fa-exclamation-circle {
+    color:#fc4db9;
+    margin-left: 5px;
+}
+
+.far.fa-comment-alt {
+    font-size: 30px;
+    opacity: 0.7;
+}
+
+.more_sevice_part1, .more_sevice_part2 {
+    display: flex;
+    padding: 0 22px;
+}
+
+.more_sevice_part1 {
+    margin-bottom: 45px;
+    margin-top: 35px;
+}
+
+.more_sevice_part2 {
+    margin-bottom: 35px;
+}
+
+.more_sevice_part1 div, .more_sevice_part2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.more_services i{
+    font-size: 27px;
+    opacity: 0.6;
+    margin-bottom: 12px;
+}
+
+.more_services_talk {
+    position: relative;
+}
+
+.more_mark {
+    width: 10px;
+    position: absolute;
+    bottom: 55px;
+}
+
+.more_services span {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.suggestion_title {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 22px;
+    padding: 22px 0;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.suggestion_list {
+    display: flex;
+    padding: 0 22px;
+}
+
+.suggestion_story, .suggestion_friends, .suggestion_gem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.suggestion_story img, .suggestion_friends img, .suggestion_gem img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.suggestion_story span, .suggestion_friends span, .suggestion_gem span {
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.5;
+    text-align: center;
+}

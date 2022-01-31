@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/screens/index.css">
+    <title>Login - KokoaTalk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <span class="status-bar_Agency">LG U+</span>
+        <span class="status-bar_time">12:33</span>
+        <div class="status-bar_info">
+            <i class="fas fa-clock fa-xs"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-signal fa-xs"></i>
+            <span class="status-bar_battery">77%</span>
+            <i class="fas fa-battery-three-quarters"></i>
+        </div>
+    </div>
+    <main class="welcome_main">
+        <img class="welcome_main_img" src="CSS/images/splash_dog.png" art="dog">
+        <span class="welcome_main_title">
+            Welcome to KokoaTalk
+        </span>
+        <span class="welcome_main_desrip">
+            If you have a Kokoa Account,<br>log in with your email or phone number.
+        </span>
+    </main>
+    <form class="login" action="friends.html" method="get">
+        <input class="login_id" id="login_id" name="login_id" type="text" placeholder="Email or phone number" required minlength="8">
+        <input class="login_pw" id="login_pw" name="login_pw" type="text" placeholder="Password" required minlength="10">
+        <input class="login_bnt" type="submit" value="Log In">
+        <input class="signup_bnt" type="submit" value="Sign Up">
+        <a href="#" class="find_idfw">Find Kokoa Account or Password</a>
+    </form>
+    <div class="no-mobile">
+        <img class="no-mobile_img" src="CSS/images/no_mobile.png">
+        <span class="no-mobile_text">
+            You're Screen is TOO BIG... :(
+        </span>
+    </div>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous" ></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "reset.css";
+@import "variables.css";
+
+@import "common/header.css";
+@import "common/status-bar.css";
+@import "common/title.css";
+@import "common/usertype.css";
+@import "common/navigation.css";
+@import "common/no-mobile.css";
+
+body{
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.no-mobile {
+  z-index: 99;
+}
+
+.splash {
+  z-index: 4;
+}
+
+.status-bar {
+  z-index: 3;
+}
+
+header {
+  z-index: 2;
+}
+
+main {
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;  
+}

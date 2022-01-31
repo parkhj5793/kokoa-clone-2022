@@ -1,0 +1,71 @@
+body {
+    background-image: url("../images/setting_background.png");
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+    background-position: top 400px left 200px;
+}
+
+.settings_top {
+    margin-top: 90px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.settings_bottom {
+    padding-top: 15px;
+}
+
+.settings_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 22px;
+    padding: 22px 0;
+    border-bottom: 0.2px solid rgba(0, 0, 0, 0.1);
+}
+
+.settings_list:last-child {
+    border: none;
+}
+
+.settings_list i {
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.settings_list_icon {
+    text-align: center;
+}
+
+.settings_list_icon span {
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.settings_list_text {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.settings_list:nth-child(4) {
+  position: relative;
+}
+
+.settings_list_icon_alarm {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #E5B0C7;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 22px;
+    left: 80px;
+}

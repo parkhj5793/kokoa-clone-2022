@@ -1,0 +1,25 @@
+.area {
+    margin: 0 22px;
+}
+.area_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.area_title_text {
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.5;
+    margin-right: 3px;
+}
+
+.area_title i {
+    opacity: 0.5;
+}
+
+.area_bnts {
+    display: flex;
+}

@@ -1,0 +1,75 @@
+.welcome_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 22px 40px 22px;
+}
+
+.welcome_main_img{
+    width: 100px;
+    margin-bottom: 28px;
+}
+
+.welcome_main_title {
+   font-size: 18px;
+   font-weight: 700;
+   padding-bottom: 14px;
+}
+
+.welcome_main_desrip {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.5;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    padding: 0 22px 40px 22px;
+}
+
+.login_id, .login_pw {
+    height: 56px;
+    border:none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.login_id:focus {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.login_pw:focus {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.login_id::placeholder, .login_pw::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.5;
+ }
+
+ .login_bnt, .signup_bnt {
+     background-color: #F7F7F7;
+     border: none;
+     font-size: 15px;
+     font-weight: 500;
+     border-radius: 7px;
+     height: 46px;
+ }
+
+ .login_bnt {
+     margin-top: 33px;
+     margin-bottom: 10px;
+ }
+
+ .find_idfw {
+     margin-top: 21px;
+     font-size: 14px;
+     text-decoration: none;
+     text-align: center;
+     color: black;
+     opacity: 0.8;
+ }
+
